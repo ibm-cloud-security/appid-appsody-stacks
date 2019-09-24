@@ -1,13 +1,10 @@
-name: Node.js Express
-version: 0.2.6
-description: Express web framework for Node.js
+name: Node.js Express web app protected with App ID
+version: 0.0.1
+description: Node.js Express web app protected with App ID
 license: Apache-2.0
 language: nodejs
 maintainers:
-  - name: Chris Bailey
-    email: cnbailey@gmail.com
-    github-id: seabaylea
-  - name: Neeraj Laad
-    email: neeraj.laad@gmail.com
-    github-id: neeraj-laad
-default-template: simple
+  - name: Anton Aleksandrov
+    email: antona@us.ibm.com
+    github-id: aal80
+default-template: webapp
