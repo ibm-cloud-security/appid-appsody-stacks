@@ -3,11 +3,11 @@ projects:
   nodejs-express-with-appid:
   - updated: 2019-09-24T23:12:19+0000
     name: Node.js Express web app protected with App ID
-    version: 0.0.1
+    version: 0.0.2
     description: Node.js Express web app protected with App ID
     license: Apache-2.0
     maintainers:
       - antona@us.ibm.com
     default-template: webapp
     urls:
-    - https://github.com/appsody/stacks/releases/download/nodejs-express-v0.2.5/incubator.nodejs-express.templates.simple.tar.gz
+    - https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/1.tar.gz
