@@ -1,0 +1,24 @@
+{
+  "name": "simple-node-backend-app-with-appid",
+  "version": "0.0.1",
+  "description": "Simple Node.js Express backend application with App ID",
+  "license": "Apache-2.0",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ibm-cloud-security/appid-appsody-stacks.git",
+    "directory": "incubator/nodejs-express/backendapp"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "~6.1.0",
+    "request": "^2.88.0"
+  },
+  "dependencies": {
+    "ibmcloud-appid": "^6.0.0",
+    "passport": "^0.4.0"
+  }
+}

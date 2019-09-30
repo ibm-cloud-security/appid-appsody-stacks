@@ -1,13 +1,18 @@
-apiVersion: v1
-projects:
-  nodejs-express-with-appid:
-  - updated: 2019-09-24T23:12:19+0000
-    name: Node.js Express web app protected with App ID
-    version: 0.0.2
-    description: Node.js Express web app protected with App ID
+apiVersion: v2
+stacks:
+  - id: nodejs-express
+    name: App ID stacks for Node.JS Express
+    version: 0.6.0
+    description: App ID stacks for Node.JS Express
     license: Apache-2.0
+    language: nodejs
     maintainers:
-      - antona@us.ibm.com
+      - name: Anton Aleksandrov
+        email: antona@us.ibm.com
+        github-id: aal80
     default-template: webapp
-    urls:
-    - https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/1.tar.gz
+    templates:
+      - id: webapp
+        url: https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.nodejs-express.webapp.tar.gz
+      - id: backendapp
+        url: https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.nodejs-express.backendapp.tar.gz
