@@ -5,6 +5,7 @@ OUT_DIR="out"
 AUTH_HEADER=$(cat ./ci/auth-header.txt)
 
 FILENAME_INDEX_YAML="index.yaml"
+FILENAME_INDEX_JSON="index.json"
 FILENAME_NODEJS_WEBAPP="appid.incubator.nodejs-express.webapp.tar.gz"
 FILENAME_NODEJS_BACKENDAPP="appid.incubator.nodejs-express.backendapp.tar.gz"
 
@@ -33,6 +34,13 @@ curl \
     -T "$WORK_DIR/$FILENAME_INDEX_YAML" \
     -H "Authorization: ${AUTH_HEADER}" \
     $S3_BUCKET_URL/$FILENAME_INDEX_YAML
+
+echo Uploading $FILENAME_INDEX_JSON
+curl \
+    -X PUT \
+    -T "$WORK_DIR/$FILENAME_INDEX_JSON" \
+    -H "Authorization: ${AUTH_HEADER}" \
+    $S3_BUCKET_URL/$FILENAME_INDEX_JSON
 
 echo Uploading $FILENAME_NODEJS_WEBAPP
 curl \

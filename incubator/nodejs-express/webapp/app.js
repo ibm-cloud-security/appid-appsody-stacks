@@ -43,8 +43,8 @@ app.get('/appid/logout', function(req, res){
 	res.redirect('/');
 });
 
-// Protect the whole app
-app.use(passport.authenticate(WebAppStrategy.STRATEGY_NAME));
+// Protect the web app api
+app.use('/api', passport.authenticate(WebAppStrategy.STRATEGY_NAME));
 
 // Return user's name
 app.get('/api/user', (req, res) => {

@@ -1,0 +1,10 @@
+[
+    {
+        "displayName": "Node.JS web application protected with IBM Cloud App ID",
+        "description": "Node.JS applications protected with IBM Cloud App ID",
+        "language": "nodejs",
+        "projectType": "appsodyExtension",
+        "projectStyle": "Appsody",
+        "location": "https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.nodejs-express.webapp.tar.gz"
+    }
+]

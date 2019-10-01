@@ -5,11 +5,11 @@ const APIStrategy = require('ibmcloud-appid').APIStrategy;
 const app = express();
 app.use(passport.initialize());
 passport.use(new APIStrategy({
-	oauthServerUrl: "",
+	oauthServerUrl: '',
 }));
 
-// Protect the whole app
-app.use(passport.authenticate(APIStrategy.STRATEGY_NAME, {
+// Protect the API path
+app.use('/api/', passport.authenticate(APIStrategy.STRATEGY_NAME, {
 	session: false
 }));
 
@@ -18,11 +18,6 @@ app.get('/api/data', (req, res) => {
 	res.json({
 		data: 12345
 	});
-});
-
-// Start server
-app.listen(3000, () => {
-    console.log('Listening on http://localhost:3000');
 });
  
 module.exports.app = app;

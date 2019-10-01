@@ -8,8 +8,10 @@ Following steps are required in order to leverage IBM Cloud App ID SDK bundled w
 2. Open `Applications` tab
 3. Create new application
 4. Copy `clientId`, `secret`, `oauthServerUrl` and `tenantId` properties from the newly created application in App ID Dashboard into `app.js`
-5. Register your `redirect_uri` with App ID by going into `Manage Authentication` -> `Authentication Settings`
+5. Register your `redirect_uri` with App ID by going into `Manage Authentication` -> `Authentication Settings`. For running the app locally you might want to register the default `http://localhost:3000/appid/callback`. When running in production you'll need to register the proper production domain name. 
 
 Start the app with `appsody run`. 
 
 > When deploying your app to production environment it is recommended to store the above values using environment variables.
+
+
