@@ -2,8 +2,8 @@ apiVersion: v2
 stacks:
   - id: nodejs-express
     name: App ID stacks for Node.JS Express
-    version: 0.6.0
-    description: App ID stacks for Node.JS Express
+    version: 0.0.1
+    description: Node.JS applications protected with IBM Cloud App ID
     license: Apache-2.0
     language: nodejs
     maintainers:
@@ -16,3 +16,20 @@ stacks:
         url: https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.nodejs-express.webapp.tar.gz
       - id: backendapp
         url: https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.nodejs-express.backendapp.tar.gz
+  - id: java-spring-boot2
+    name: App ID stacks for Spring Boot 2
+    version: 0.0.1
+    description: Spring Boot applications protected with IBM Cloud App ID
+    license: Apache-2.0
+    language: java
+    maintainers:
+      - name: Anton Aleksandrov
+        email: antona@us.ibm.com
+        github-id: aal80
+    default-template: webapp
+    templates:
+      - id: webapp
+        url: https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.springboot.webapp.tar.gz
+      - id: backendapp
+        url: https://s3.us-east.cloud-object-storage.appdomain.cloud/appsody-stacks/appid.incubator.springboot.backendapp.tar.gz
+
